@@ -79,7 +79,77 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TP_D_W";
             #binding-cells = <0>;
-            bindings = <&mt LS(Q) Q>, <&kp AT_SIGN>;
+            bindings = <&as Q>, <&kp AT_SIGN>;
+        };
+
+        tp_d_e: tp_d_e {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TP_D_E";
+            #binding-cells = <0>;
+            bindings = <&as E>, <&kp POUND>;
+        };
+
+        tp_d_r: tp_d_r {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TP_D_R";
+            #binding-cells = <0>;
+            bindings = <&as R>, <&kp DOLLAR>;
+        };
+
+        tp_d_t: tp_d_t {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TP_D_T";
+            #binding-cells = <0>;
+            bindings = <&as T>, <&kp PERCENT>;
+        };
+
+        tp_d_y: tp_d_y {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TP_D_Y";
+            #binding-cells = <0>;
+            bindings = <&as Y>, <&kp LCTRL>;
+        };
+
+        tp_d_u: tp_d_u {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TP_D_U";
+            #binding-cells = <0>;
+            bindings = <&as U>, <&kp AMPERSAND>;
+        };
+
+        tp_d_i: tp_d_i {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TP_D_I";
+            #binding-cells = <0>;
+            bindings = <&as I>, <&kp ASTERISK>;
+        };
+
+        tp_d_o: tp_d_o {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TP_D_O";
+            #binding-cells = <0>;
+            bindings = <&as O>, <&kp LEFT_PARENTHESIS>;
+        };
+
+        tp_d_p: tp_d_p {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TP_D_P";
+            #binding-cells = <0>;
+            bindings = <&as P>, <&kp RIGHT_PARENTHESIS>;
+        };
+
+        tp_d_tab: tp_d_tab {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TP_D_TAB";
+            #binding-cells = <0>;
+            bindings = <&mt TILDE TAB>, <&kp GRAVE>;
+        };
+
+        tp_d_shift: tp_d_shift {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TP_D_SHIFT";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT>, <&kp CAPSLOCK>;
         };
     };
 
@@ -95,10 +165,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB    &tp_d_q  &tp_d_w  &as E  &as R         &as T        &as Y      &as U      &as I      &as O    &as P     &kp ENTER
-&kp DEL    &as A    &as S    &as D  &as F         &as G        &as H      &as J      &as K      &as L    &kp SEMI  &kp SQT
-&kp LSHFT  &as Z    &as X    &as C  &as V         &as B        &as N      &as M      &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                             &mo 1  &kp LEFT_GUI  &kp SPACE    &kp SPACE  &kp ENTER  &mo 2
+&tp_d_tab    &tp_d_q  &tp_d_w  &tp_d_e  &tp_d_r       &tp_d_t      &tp_d_y    &tp_d_u    &tp_d_i    &tp_d_o  &tp_d_p   &kp ENTER
+&kp DEL      &as A    &as S    &as D    &as F         &as G        &as H      &as J      &as K      &as L    &kp SEMI  &kp SQT
+&tp_d_shift  &as Z    &as X    &as C    &as V         &as B        &as N      &as M      &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                               &mo 1    &kp LEFT_GUI  &kp SPACE    &kp SPACE  &kp ENTER  &mo 2
             >;
         };
 
@@ -111,10 +181,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+&trans         &trans         &trans         &trans         &trans         &trans           &kp LG(LA(I))             &kp N7        &kp N8        &kp N9        &trans  &kp LA(LC(ENTER))
+&kp LA(LC(Z))  &kp LA(LC(D))  &kp LA(LC(E))  &kp LA(LC(F))  &kp LA(LC(T))  &kp LA(LC(G))    &kp LC(LA(LS(NUMBER_4)))  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &trans
+&kp LA(LC(V))  &trans         &trans         &trans         &trans         &trans           &kp LS(LG(NUMBER_4))      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
+                                             &trans         &trans         &kp SPACE        &kp LA(LC(C))             &trans        &kp NUMBER_0
             >;
         };
 
@@ -127,10 +197,10 @@
 
             display-name = "Raise";
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+&mt TILDE GRAVE  &kp NUMBER_1    &kp NUMBER_2      &kp NUMBER_3          &kp NUMBER_4  &kp N5           &kp NUMBER_6  &kp N7            &kp N8                 &kp N9      &kp NUMBER_0     &kp ENTER
+&kp DEL          &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp EQUAL     &kp LESS_THAN    &kp CARET     &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp RBKT    &kp RIGHT_BRACE  &kp SINGLE_QUOTE
+&kp LSHFT        &kp ASTERISK    &kp SLASH         &kp PLUS              &kp MINUS     &kp PERCENT      &kp HASH      &kp AMPERSAND     &kp PIPE               &kp PERIOD  &kp DOLLAR       &kp BACKSLASH
+                                                   &trans                &trans        &kp SPACE        &kp RET       &trans            &trans
             >;
         };
 
@@ -141,12 +211,12 @@
             // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            display-name = "Raise";
+            display-name = "Both";
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                        &trans        &trans        &trans          &trans  &trans  &trans
             >;
         };
 
@@ -157,6 +227,15 @@
 &trans  &as Z  &as X  &as C   &as V   &as B     &as N   &as M   &trans  &trans  &trans  &trans
                       &trans  &trans  &trans    &trans  &trans  &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        tri_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
