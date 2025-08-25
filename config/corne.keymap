@@ -45,7 +45,7 @@
             bindings = <&shift>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <135>;
+            tapping-term-ms = <500>;
             flavor = "tap-preferred";
             quick-tap-ms = <0>;
         };
@@ -176,10 +176,10 @@
 
             display-name = "Base";
             bindings = <
-&tp_d_tab      &tp_d_q  &tp_d_w  &tp_d_e       &tp_d_r    &tp_d_t    &tp_d_y  &tp_d_u    &tp_d_i    &tp_d_o  &tp_d_p   &kp ENTER
-&kp BACKSPACE  &as A    &as S    &as D         &as F      &as G      &as H    &as J      &as K      &as L    &kp SEMI  &kp SQT
-&tp_d_shift    &as Z    &as X    &as C         &as V      &as B      &as N    &as M      &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                                 &kp LEFT_GUI  &kp SPACE  &mo 1      &mo 2    &kp ENTER  &kp SPACE
+&tp_d_tab      &as Q  &as W  &as E         &as R      &as T    &as Y  &as U      &as I      &as O    &as P     &kp ENTER
+&kp BACKSPACE  &as A  &as S  &as D         &as F      &as G    &as H  &as J      &as K      &as L    &kp SEMI  &kp SQT
+&tp_d_shift    &as Z  &as X  &as C         &as V      &as B    &as N  &as M      &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                             &kp LEFT_GUI  &kp SPACE  &mo 1    &mo 2  &kp ENTER  &kp SPACE
             >;
         };
 
@@ -208,10 +208,10 @@
 
             display-name = "Raise";
             bindings = <
-&mt TILDE GRAVE  &kp NUMBER_1    &kp NUMBER_2      &kp NUMBER_3          &kp NUMBER_4  &kp N5           &kp NUMBER_6  &kp N7            &kp N8                 &kp N9      &kp NUMBER_0     &kp ENTER
-&kp DEL          &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp EQUAL     &kp LESS_THAN    &kp CARET     &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp RBKT    &kp RIGHT_BRACE  &kp SINGLE_QUOTE
-&kp LSHFT        &kp ASTERISK    &kp SLASH         &kp PLUS              &kp MINUS     &kp PERCENT      &kp HASH      &kp AMPERSAND     &kp PIPE               &kp PERIOD  &kp DOLLAR       &kp BACKSLASH
-                                                   &trans                &trans        &trans           &trans        &trans            &trans
+&mt TILDE GRAVE  &kp EXCLAMATION  &kp AT_SIGN       &kp HASH              &kp DOLLAR  &kp PERCENT      &kp LCTRL  &kp AMPERSAND     &kp ASTERISK           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ENTER
+&kp DEL          &kp LEFT_BRACE   &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp EQUAL   &kp LESS_THAN    &kp CARET  &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp RBKT              &kp RIGHT_BRACE        &kp SINGLE_QUOTE
+&kp LSHFT        &kp ASTERISK     &kp SLASH         &kp PLUS              &kp MINUS   &kp PERCENT      &kp HASH   &kp AMPERSAND     &kp PIPE               &kp PERIOD            &kp DOLLAR             &kp BACKSLASH
+                                                    &trans                &trans      &trans           &trans     &trans            &trans
             >;
         };
 
