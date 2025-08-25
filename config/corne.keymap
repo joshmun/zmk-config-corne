@@ -45,10 +45,9 @@
             bindings = <&shift>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <500>;
-            flavor = "balanced";
-            quick-tap-ms = <200>;
-            require-prior-idle-ms = <125>;
+            tapping-term-ms = <135>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <0>;
         };
 
         hml: homewrow_mods_left {
@@ -193,10 +192,10 @@
 
             display-name = "Lower";
             bindings = <
-&trans         &trans         &trans         &trans         &trans         &trans           &kp LG(LA(I))             &kp N7        &kp N8        &kp N9        &trans  &kp LA(LC(ENTER))
-&kp LA(LC(Z))  &kp LA(LC(D))  &kp LA(LC(E))  &kp LA(LC(F))  &kp LA(LC(T))  &kp LA(LC(G))    &kp LC(LA(LS(NUMBER_4)))  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &trans
-&kp LA(LC(V))  &trans         &trans         &trans         &trans         &trans           &kp LS(LG(NUMBER_4))      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
-                                             &trans         &trans         &kp SPACE        &kp LA(LC(C))             &trans        &kp NUMBER_0
+&trans         &trans         &trans         &trans         &trans         &trans           &kp LG(LA(I))             &kp N7         &kp N8        &kp N9        &trans  &kp LA(LC(ENTER))
+&kp LA(LC(Z))  &kp LA(LC(D))  &kp LA(LC(E))  &kp LA(LC(F))  &kp LA(LC(T))  &kp LA(LC(G))    &kp LC(LA(LS(NUMBER_4)))  &kp NUMBER_4   &kp N5        &kp NUMBER_6  &trans  &trans
+&kp LA(LC(V))  &trans         &trans         &trans         &trans         &trans           &kp LS(LG(NUMBER_4))      &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
+                                             &trans         &trans         &trans           &trans                    &kp LA(LC(C))  &kp NUMBER_0
             >;
         };
 
@@ -212,7 +211,7 @@
 &mt TILDE GRAVE  &kp NUMBER_1    &kp NUMBER_2      &kp NUMBER_3          &kp NUMBER_4  &kp N5           &kp NUMBER_6  &kp N7            &kp N8                 &kp N9      &kp NUMBER_0     &kp ENTER
 &kp DEL          &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp EQUAL     &kp LESS_THAN    &kp CARET     &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp RBKT    &kp RIGHT_BRACE  &kp SINGLE_QUOTE
 &kp LSHFT        &kp ASTERISK    &kp SLASH         &kp PLUS              &kp MINUS     &kp PERCENT      &kp HASH      &kp AMPERSAND     &kp PIPE               &kp PERIOD  &kp DOLLAR       &kp BACKSLASH
-                                                   &trans                &trans        &kp SPACE        &kp RET       &trans            &trans
+                                                   &trans                &trans        &trans           &trans        &trans            &trans
             >;
         };
 
