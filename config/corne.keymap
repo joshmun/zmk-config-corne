@@ -149,7 +149,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TP_D_SHIFT";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPSLOCK>;
+            bindings = <&mt LEFT_SHIFT LEFT_SHIFT>, <&kp CAPSLOCK>;
         };
     };
 
