@@ -47,6 +47,8 @@
             #binding-cells = <2>;
             tapping-term-ms = <500>;
             flavor = "balanced";
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <125>;
         };
 
         hml: homewrow_mods_left {
@@ -154,6 +156,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        cmd+shift+dir {
+            bindings = <&none>;
+            key-positions = <37 24>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -221,12 +232,12 @@
             >;
         };
 
-        autoshift {
+        special {
             bindings = <
-&trans  &as Q  &as W  &as E   &as R   &as T     &as Y   &as U   &as I   &as O   &as P   &trans
-&trans  &as A  &as S  &as D   &as F   &as G     &as H   &as J   &as K   &as L   &trans  &trans
-&trans  &as Z  &as X  &as C   &as V   &as B     &as N   &as M   &trans  &trans  &trans  &trans
-                      &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans    &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans    &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
