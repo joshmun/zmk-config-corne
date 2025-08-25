@@ -155,16 +155,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        cmd+shift+dir {
-            bindings = <&mo 4>;
-            key-positions = <24 36>;
-            layers = <0>;
-            timeout-ms = <50>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
