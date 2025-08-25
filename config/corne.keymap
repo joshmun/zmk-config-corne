@@ -80,7 +80,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TP_D_W";
             #binding-cells = <0>;
-            bindings = <&as Q>, <&kp AT_SIGN>;
+            bindings = <&as W>, <&kp AT_SIGN>;
         };
 
         tp_d_e: tp_d_e {
