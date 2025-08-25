@@ -159,8 +159,10 @@
         compatible = "zmk,combos";
 
         cmd+shift+dir {
-            bindings = <&none>;
-            key-positions = <37 24>;
+            bindings = <&mo 4>;
+            key-positions = <24 36>;
+            layers = <0>;
+            timeout-ms = <50>;
         };
     };
 
