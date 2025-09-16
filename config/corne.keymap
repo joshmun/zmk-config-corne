@@ -155,7 +155,15 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        to_4 {
+            bindings = <&to 4>;
+            key-positions = <24 37>;
+            layers = <0>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
