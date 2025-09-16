@@ -169,10 +169,10 @@
 
             display-name = "Base";
             bindings = <
-&tp_d_tab      &as Q  &as W  &as E         &as R      &as T          &as Y        &as U      &as I                &as O                    &as P                &lt 4 ENTER
-&kp BACKSPACE  &as A  &as S  &as D         &as F      &as G          &as H        &as J      &as K                &as L                    &mt COLON SEMICOLON  &mt DOUBLE_QUOTES SQT
-&tp_d_shift    &as Z  &as X  &as C         &as V      &as B          &as N        &as M      &mt LESS_THAN COMMA  &mt GREATER_THAN PERIOD  &mt QUESTION FSLH    &kp ESC
-                             &kp LEFT_GUI  &kp SPACE  &lt 1 SPACE    &lt 2 SPACE  &kp SPACE  &kp ENTER
+&tp_d_tab      &as Q  &as W  &as E      &as R             &as T          &as Y        &as U      &as I                &as O                    &as P                &lt 4 ENTER
+&kp BACKSPACE  &as A  &as S  &as D      &as F             &as G          &as H        &as J      &as K                &as L                    &mt COLON SEMICOLON  &mt DOUBLE_QUOTES SQT
+&tp_d_shift    &as Z  &as X  &as C      &as V             &as B          &as N        &as M      &mt LESS_THAN COMMA  &mt GREATER_THAN PERIOD  &mt QUESTION FSLH    &mt RCTRL ESC
+                             &kp LCTRL  &kp LEFT_COMMAND  &lt 1 SPACE    &lt 2 SPACE  &kp ENTER  &kp RIGHT_ALT
             >;
         };
 
@@ -219,7 +219,7 @@
             bindings = <
 &kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &kp F7  &kp F8             &kp F9         &kp F10            &kp F11       &kp F12
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &kp RIGHT_COMMAND  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &kp UP_ARROW  &trans
-&trans      &trans        &trans        &kp C         &trans        &trans          &trans  &trans             &trans         &kp LEFT           &kp DOWN      &kp RIGHT
+&trans      &trans        &trans        &none         &trans        &trans          &trans  &trans             &trans         &kp LEFT           &kp DOWN      &kp RIGHT
                                         &trans        &trans        &trans          &trans  &trans             &trans
             >;
         };
