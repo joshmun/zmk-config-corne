@@ -194,7 +194,7 @@
             display-name = "Lower";
             bindings = <
 &trans         &trans         &trans         &trans         &trans         &trans           &kp LG(LA(I))             &kp N7         &kp N8        &kp N9        &trans  &kp LA(LC(ENTER))
-&kp LA(LC(Z))  &kp LA(LC(D))  &kp LA(LC(E))  &kp LA(LC(F))  &kp LA(LC(T))  &kp LA(LC(G))    &kp LC(LA(LS(NUMBER_4)))  &kp NUMBER_4   &kp N5        &kp NUMBER_6  &trans  &trans
+&kp LA(LC(Z))  &kp LA(LC(D))  &kp LA(LC(E))  &kp LA(LC(F))  &kp LA(LC(T))  &kp LA(LC(G))    &kp LC(LS(LG(NUMBER_4)))  &kp NUMBER_4   &kp N5        &kp NUMBER_6  &trans  &trans
 &kp LA(LC(V))  &kp LA(LC(X))  &kp LA(LC(B))  &trans         &trans         &trans           &kp LS(LG(NUMBER_4))      &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
                                              &trans         &trans         &trans           &trans                    &kp LA(LC(C))  &kp NUMBER_0
             >;
