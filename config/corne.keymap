@@ -169,10 +169,10 @@
 
             display-name = "Base";
             bindings = <
-&tp_d_tab      &as Q  &as W  &as E         &as R  &as T    &as Y  &as U      &as I                &as O                    &as P                &mt LG(LS(SPACE)) ENTER
-&kp BACKSPACE  &as A  &as S  &as D         &as F  &as G    &as H  &as J      &as K                &as L                    &mt COLON SEMICOLON  &mt DOUBLE_QUOTES SQT
-&tp_d_shift    &as Z  &as X  &as C         &as V  &as B    &as N  &as M      &mt LESS_THAN COMMA  &mt GREATER_THAN PERIOD  &mt QUESTION FSLH    &kp ESC
-                             &kp LEFT_GUI  &mo 4  &mo 1    &mo 2  &kp SPACE  &kp ENTER
+&tp_d_tab      &as Q  &as W  &as E         &as R      &as T          &as Y        &as U      &as I                &as O                    &as P                &lt 4 ENTER
+&kp BACKSPACE  &as A  &as S  &as D         &as F      &as G          &as H        &as J      &as K                &as L                    &mt COLON SEMICOLON  &mt DOUBLE_QUOTES SQT
+&tp_d_shift    &as Z  &as X  &as C         &as V      &as B          &as N        &as M      &mt LESS_THAN COMMA  &mt GREATER_THAN PERIOD  &mt QUESTION FSLH    &kp ESC
+                             &kp LEFT_GUI  &kp SPACE  &lt 1 SPACE    &lt 2 SPACE  &kp SPACE  &kp ENTER
             >;
         };
 
@@ -226,10 +226,10 @@
 
         special {
             bindings = <
-&trans          &trans  &trans  &trans        &trans  &trans    &trans  &trans  &trans          &trans    &trans        &trans
-&trans          &trans  &trans  &trans        &trans  &trans    &trans  &trans  &trans          &trans    &trans        &trans
-&kp LEFT_SHIFT  &trans  &trans  &trans        &trans  &trans    &trans  &trans  &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT
-                                &kp LEFT_GUI  &mo 4   &trans    &trans  &trans  &trans
+&trans          &trans  &trans  &trans        &trans        &trans       &trans  &trans  &trans          &trans    &trans        &to 0
+&trans          &trans  &trans  &trans        &trans        &trans       &trans  &trans  &trans          &trans    &trans        &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans        &trans        &trans       &trans  &trans  &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT
+                                &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL    &trans  &trans  &trans
             >;
 
             label = "Special";
