@@ -160,8 +160,13 @@
 
         to_4 {
             bindings = <&to 4>;
-            key-positions = <24 37>;
+            key-positions = <16 15>;
             layers = <0>;
+        };
+
+        momentary_4 {
+            bindings = <&mo 4>;
+            key-positions = <16 14>;
         };
     };
 
@@ -177,9 +182,9 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB        &as Q  &as W  &as E      &as R             &as T          &as Y        &as U      &as I                &as O                    &as P                &kp ENTER
-&kp BACKSPACE  &as A  &as S  &as D      &as F             &as G          &as H        &as J      &as K                &as L                    &mt COLON SEMICOLON  &mt DOUBLE_QUOTES SQT
-&tp_d_shift    &as Z  &as X  &as C      &as V             &as B          &as N        &as M      &mt LESS_THAN COMMA  &mt GREATER_THAN PERIOD  &mt QUESTION FSLH    &gresc
+&kp TAB        &as Q  &as W  &as E      &as R             &as T          &as Y        &as U      &as I          &as O       &as P          &kp ENTER
+&kp BACKSPACE  &as A  &as S  &as D      &as F             &as G          &as H        &as J      &as K          &as L       &as SEMICOLON  &as SQT
+&tp_d_shift    &as Z  &as X  &as C      &as V             &as B          &as N        &as M      &as COMMA      &as PERIOD  &as SLASH      &gresc
                              &kp LCTRL  &kp LEFT_COMMAND  &lt 1 SPACE    &lt 2 SPACE  &kp ENTER  &kp RIGHT_ALT
             >;
         };
