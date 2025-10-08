@@ -198,10 +198,10 @@
 
             display-name = "Lower";
             bindings = <
-&trans         &trans         &trans         &trans         &trans         &trans           &kp LG(LA(I))             &kp N7         &kp N8        &kp N9        &trans      &kp LA(LC(ENTER))
-&kp LA(LC(Z))  &kp LA(LC(D))  &kp LA(LC(E))  &kp LA(LC(F))  &kp LA(LC(T))  &kp LA(LC(G))    &kp LC(LS(LG(NUMBER_4)))  &kp NUMBER_4   &kp N5        &kp NUMBER_6  &trans      &trans
-&kp LA(LC(V))  &kp LA(LC(X))  &kp LA(LC(B))  &trans         &trans         &trans           &kp LS(LG(NUMBER_4))      &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD  &trans
-                                             &trans         &trans         &trans           &trans                    &kp LA(LC(C))  &kp NUMBER_0
+&trans         &kp LA(LC(Z))  &kp LA(LC(LEFT))  &kp LA(LC(RIGHT))  &kp LA(LC(V))  &trans           &kp LG(LA(I))             &kp N7        &kp N8        &kp N9        &trans  &kp LA(LC(ENTER))
+&kp BACKSPACE  &kp LA(LC(D))  &kp LA(LC(E))     &kp LA(LC(F))      &kp LA(LC(T))  &kp LA(LC(G))    &kp LC(LS(LG(NUMBER_4)))  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &trans
+&trans         &kp LA(LC(X))  &kp LA(LC(B))     &trans             &trans         &kp LA(LC(C))    &kp LS(LG(NUMBER_4))      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
+                                                &trans             &trans         &trans           &trans                    &kp PERIOD    &kp NUMBER_0
             >;
         };
 
@@ -239,10 +239,10 @@
 
         special {
             bindings = <
-&to 0           &trans  &trans  &trans        &trans            &trans       &trans  &trans  &trans          &trans    &trans        &trans
-&trans          &trans  &trans  &trans        &trans            &trans       &trans  &trans  &trans          &trans    &trans        &trans
-&kp LEFT_SHIFT  &trans  &trans  &trans        &trans            &trans       &trans  &trans  &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT
-                                &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LCTRL    &trans  &trans  &trans
+&to 0           &trans  &trans  &trans        &trans            &trans       &trans  &trans    &trans          &trans        &trans        &trans
+&trans          &trans  &trans  &trans        &trans            &trans       &trans  &kp LEFT  &kp DOWN        &kp UP_ARROW  &kp RIGHT     &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans        &trans            &trans       &trans  &trans    &kp LEFT_ARROW  &kp DOWN      &kp UP_ARROW  &kp RIGHT
+                                &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LCTRL    &trans  &trans    &trans
             >;
 
             label = "Special";
