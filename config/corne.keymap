@@ -239,9 +239,9 @@
 
         special {
             bindings = <
-&to 0           &trans  &trans  &trans        &trans            &trans       &trans  &trans    &trans          &trans        &trans        &trans
-&trans          &trans  &trans  &trans        &trans            &trans       &trans  &kp LEFT  &kp DOWN        &kp UP_ARROW  &kp RIGHT     &trans
-&kp LEFT_SHIFT  &trans  &trans  &trans        &trans            &trans       &trans  &trans    &kp LEFT_ARROW  &kp DOWN      &kp UP_ARROW  &kp RIGHT
+&to 0           &trans  &trans  &trans        &trans            &trans       &trans  &trans    &kp UP_ARROW    &trans     &trans        &trans
+&trans          &trans  &trans  &trans        &trans            &trans       &trans  &kp LEFT  &kp DOWN        &kp RIGHT  &trans        &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans        &trans            &trans       &trans  &trans    &kp LEFT_ARROW  &kp DOWN   &kp UP_ARROW  &kp RIGHT
                                 &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LCTRL    &trans  &trans    &trans
             >;
 
